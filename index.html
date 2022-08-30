@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="d-flex align-center jc-between">
+      <a href="#" class="logo">snap</a>
+      <div class="icon-hamburguer" onclick="toggleMenu();">
+        <img src="images/icon-menu.svg" alt="Icon Menu">
+      </div>
+      <div class="content-menu d-flex flex-column-sm">
+        <nav>
+          <div class="close-menu d-flex jc-end" onclick="toggleMenu();">
+            <img src="images/icon-close-menu.svg" alt="Icon Close Menu">
+          </div>
+          <ul class="d-flex-md">
+            <li>
+              <a href="#" class="d-flex align-center" onclick="toggleSubMenu(0);">
+                Feautures
+                <img src="images/icon-arrow-down.svg" alt="Icon">
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    <img src="images/icon-todo.svg" alt="Icon Todo">
+                    Todo List
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    <img src="images/icon-calendar.svg" alt="Icon Calendar">
+                    Calendar
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    <img src="images/icon-reminders.svg" alt="Icon Reminders">
+                    Reminders
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    <img src="images/icon-planning.svg" alt="Icon Planning">
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="d-flex align-center" onclick="toggleSubMenu(1);">
+                Company
+                <img src="images/icon-arrow-down.svg" alt="Icon">
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    History
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-center">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="buttons d-flex flex-column-sm">
+          <a href="#" class="btn">Login</a>
+          <a href="#" class="btn btn-secondary">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+    <section class="hero">
+      <div class="hero__img">
+        <picture class="d-flex">
+          <source srcset="images/image-hero-desktop.png" media="(min-width:1024px)"><img
+            src="images/image-hero-mobile.png" alt="Imagen del producto">
+        </picture>
+      </div>
+      <div class="hero__content">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matyter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <a href="#" class="btn btn-primary">Learn more</a>
+        <div class="sponsors">
+          <div class="d-flex jc-between">
+            <div><img src="images/client-databiz.svg" alt="Sponsor"></div>
+            <div><img src="images/client-audiophile.svg" alt="Sponsor"></div>
+            <div><img src="images/client-meet.svg" alt="Sponsor"></div>
+            <div><img src="images/client-maker.svg" alt="Sponsor"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://mrubi.vercel.app/" target="_blank">Marcos Rubí</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
